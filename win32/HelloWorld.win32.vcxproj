@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>HelloWorld</ProjectName>
+    <ProjectGuid>{B8BF9E81-35FD-4582-BA1C-B85FA365BABB}</ProjectGuid>
+    <RootNamespace>HelloWorldwin32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx\platform;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;..\Classes;..\Classes\UI;..\Classes\Menus;..\Classes\CCControlExtension;..\Classes\CCControlExtension\Utils;..\Classes\Extensions;..\Classes\GameElements;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libEGL.lib;libgles_cm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx\platform;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;..\Classes;..\Classes\UI;..\Classes\Menus;..\Classes\CCControlExtension;..\Classes\CCControlExtension\Utils;..\Classes\Extensions;..\Classes\GameElements;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libEGL.lib;libgles_cm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCControl.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlButton.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlCheckBox.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlColourPicker.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlHuePicker.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlSaturationBrightnessPicker.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlSlider.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCInvocation.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCMenuPassive.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCSetting.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\CCSpacer.cpp" />
+    <ClCompile Include="..\Classes\CCControlExtension\Utils\CCControlUtils.cpp" />
+    <ClCompile Include="..\Classes\Extensions\CCMenuItemDynamic.cpp" />
+    <ClCompile Include="..\Classes\Extensions\CCMenuItemSlider.cpp" />
+    <ClCompile Include="..\Classes\Extensions\CCScale9Sprite.cpp" />
+    <ClCompile Include="..\Classes\Extensions\ParticleSystemAttractors.cpp" />
+    <ClCompile Include="..\Classes\GameElements\AIParameter.cpp" />
+    <ClCompile Include="..\Classes\GameElements\Player.cpp" />
+    <ClCompile Include="..\Classes\GameElements\Powerup.cpp" />
+    <ClCompile Include="..\Classes\GameState.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Menus\MenuScene.cpp" />
+    <ClCompile Include="..\Classes\PlayerChoiceScene.cpp" />
+    <ClCompile Include="..\Classes\UI\CCClippedNode.cpp" />
+    <ClCompile Include="..\Classes\UI\LayoutSet.cpp" />
+    <ClCompile Include="..\Classes\UI\PlayerUI.cpp" />
+    <ClCompile Include="..\Classes\UI\PowerupButton.cpp" />
+    <ClCompile Include="..\Classes\UI\PowerupScroller.cpp" />
+    <ClCompile Include="..\Classes\UI\SteeringButton.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCControl.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlButton.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlCheckBox.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlColourPicker.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlExtensions.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlHuePicker.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlSaturationBrightnessPicker.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlSlider.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCInvocation.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCMenuPassive.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCSetting.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\CCSpacer.h" />
+    <ClInclude Include="..\Classes\CCControlExtension\Utils\CCControlUtils.h" />
+    <ClInclude Include="..\Classes\Extensions\CCMenuItemDynamic.h" />
+    <ClInclude Include="..\Classes\Extensions\CCMenuItemSlider.h" />
+    <ClInclude Include="..\Classes\Extensions\CCScale9Sprite.h" />
+    <ClInclude Include="..\Classes\Extensions\ParticleSystemAttractors.h" />
+    <ClInclude Include="..\Classes\GameElements\AIParameter.h" />
+    <ClInclude Include="..\Classes\GameElements\CustomColors.h" />
+    <ClInclude Include="..\Classes\GameElements\Player.h" />
+    <ClInclude Include="..\Classes\GameElements\Powerup.h" />
+    <ClInclude Include="..\Classes\GameState.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Menus\MenuScene.h" />
+    <ClInclude Include="..\Classes\PlayerChoiceScene.h" />
+    <ClInclude Include="..\Classes\UI\CCClippedNode.h" />
+    <ClInclude Include="..\Classes\UI\LayoutSet.h" />
+    <ClInclude Include="..\Classes\UI\PlayerUI.h" />
+    <ClInclude Include="..\Classes\UI\PowerupButton.h" />
+    <ClInclude Include="..\Classes\UI\PowerupScroller.h" />
+    <ClInclude Include="..\Classes\UI\SteeringButton.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\cocos2dx\proj.win32\cocos2d-win32.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

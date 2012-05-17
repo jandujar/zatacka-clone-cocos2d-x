@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Classes\Menus">
+      <UniqueIdentifier>{9cf6fbcc-3d08-4607-807f-bd47f09866d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameElements">
+      <UniqueIdentifier>{97f494d9-7439-42bf-a64b-a4fb50158ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UI">
+      <UniqueIdentifier>{264cb452-9ebe-4ac9-b369-291bd6e97886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CCControlExtension">
+      <UniqueIdentifier>{aa6d2f67-4cf8-430d-9b42-fdafcd1e953f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Extensions">
+      <UniqueIdentifier>{1c6af20f-37f6-4dda-b2ad-dffec49df2ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\CCClippedNode.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\LayoutSet.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\PowerupButton.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\PowerupScroller.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\SteeringButton.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameElements\Player.cpp">
+      <Filter>Classes\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameElements\Powerup.cpp">
+      <Filter>Classes\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Menus\MenuScene.cpp">
+      <Filter>Classes\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCControl.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlButton.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlCheckBox.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlColourPicker.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlHuePicker.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlSaturationBrightnessPicker.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCControlSlider.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCInvocation.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCMenuPassive.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCSetting.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\CCSpacer.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCControlExtension\Utils\CCControlUtils.cpp">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Extensions\CCMenuItemDynamic.cpp">
+      <Filter>Classes\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Extensions\CCMenuItemSlider.cpp">
+      <Filter>Classes\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Extensions\CCScale9Sprite.cpp">
+      <Filter>Classes\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Extensions\ParticleSystemAttractors.cpp">
+      <Filter>Classes\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameState.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameElements\AIParameter.cpp">
+      <Filter>Classes\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\PlayerUI.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PlayerChoiceScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\SteeringButton.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\CCClippedNode.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\LayoutSet.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\PowerupButton.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\PowerupScroller.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameElements\CustomColors.h">
+      <Filter>Classes\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameElements\Player.h">
+      <Filter>Classes\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameElements\Powerup.h">
+      <Filter>Classes\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Menus\MenuScene.h">
+      <Filter>Classes\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCControl.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlButton.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlCheckBox.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlColourPicker.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlExtensions.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlHuePicker.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlSaturationBrightnessPicker.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCControlSlider.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCInvocation.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCMenuPassive.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCSetting.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\CCSpacer.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCControlExtension\Utils\CCControlUtils.h">
+      <Filter>Classes\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Extensions\CCMenuItemDynamic.h">
+      <Filter>Classes\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Extensions\CCMenuItemSlider.h">
+      <Filter>Classes\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Extensions\CCScale9Sprite.h">
+      <Filter>Classes\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Extensions\ParticleSystemAttractors.h">
+      <Filter>Classes\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameState.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameElements\AIParameter.h">
+      <Filter>Classes\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\PlayerUI.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PlayerChoiceScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
